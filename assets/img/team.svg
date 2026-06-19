@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Ekip">
+  <defs>
+    <linearGradient id="team-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f9ff"></stop>
+      <stop offset="1" stop-color="#e7f0fc"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#team-bg)"></rect>
+
+  
+  <rect x="0" y="360" width="800" height="240" fill="#dceaf9"></rect>
+  <circle cx="400" cy="250" r="150" fill="#1763c9" opacity=".06"></circle>
+
+  
+  
+  <g>
+    
+    <g transform="translate(140 0)">
+      <ellipse cx="0" cy="520" rx="74" ry="14" fill="#0a2c54" opacity=".06"></ellipse>
+      <path d="M-52 360 q52 -54 104 0 l6 150 h-116 z" fill="#ffffff" stroke="#dbe6f4" stroke-width="2"></path>
+      <line x1="0" y1="320" x2="0" y2="500" stroke="#e1eaf6" stroke-width="2"></line>
+      <path d="M-10 330 l10 24 l10 -24 z" fill="#1763c9"></path>
+      <circle cx="0" cy="300" r="40" fill="#f0d6c0"></circle>
+      <path d="M-40 296 a40 40 0 0 1 80 0 q-40 -34 -80 0 z" fill="#3a2a1d"></path>
+    </g>
+    
+    <g transform="translate(280 -16)">
+      <ellipse cx="0" cy="536" rx="78" ry="14" fill="#0a2c54" opacity=".06"></ellipse>
+      <path d="M-56 372 q56 -56 112 0 l6 156 h-124 z" fill="#ffffff" stroke="#dbe6f4" stroke-width="2"></path>
+      <line x1="0" y1="330" x2="0" y2="516" stroke="#e1eaf6" stroke-width="2"></line>
+      <path d="M-10 342 l10 24 l10 -24 z" fill="#37c0c9"></path>
+      <circle cx="0" cy="308" r="42" fill="#e7bfa0"></circle>
+      <path d="M-42 308 a42 42 0 0 1 84 0 l0 -6 q-42 -30 -84 0 z" fill="#1d1b18"></path>
+    </g>
+    
+    <g transform="translate(420 8)">
+      <ellipse cx="0" cy="560" rx="86" ry="16" fill="#0a2c54" opacity=".07"></ellipse>
+      <path d="M-62 380 q62 -60 124 0 l8 172 h-140 z" fill="#ffffff" stroke="#d3dded" stroke-width="2.5"></path>
+      <line x1="0" y1="336" x2="0" y2="540" stroke="#e1eaf6" stroke-width="2"></line>
+      <path d="M-12 350 l12 28 l12 -28 z" fill="#1763c9"></path>
+      <rect x="-26" y="392" width="20" height="26" rx="4" fill="#e7f0fc"></rect>
+      <circle cx="0" cy="312" r="46" fill="#f0d6c0"></circle>
+      <path d="M-46 308 a46 46 0 0 1 92 0 q-46 -38 -92 0 z" fill="#4a3322"></path>
+    </g>
+    
+    <g transform="translate(560 -16)">
+      <ellipse cx="0" cy="536" rx="78" ry="14" fill="#0a2c54" opacity=".06"></ellipse>
+      <path d="M-56 372 q56 -56 112 0 l6 156 h-124 z" fill="#ffffff" stroke="#dbe6f4" stroke-width="2"></path>
+      <line x1="0" y1="330" x2="0" y2="516" stroke="#e1eaf6" stroke-width="2"></line>
+      <path d="M-10 342 l10 24 l10 -24 z" fill="#2e7be0"></path>
+      <circle cx="0" cy="308" r="42" fill="#e0b89a"></circle>
+      <path d="M-42 304 a42 42 0 0 1 84 0 q-42 -34 -84 0 z" fill="#2b2118"></path>
+    </g>
+    
+    <g transform="translate(680 0)">
+      <ellipse cx="0" cy="520" rx="74" ry="14" fill="#0a2c54" opacity=".06"></ellipse>
+      <path d="M-52 360 q52 -54 104 0 l6 150 h-116 z" fill="#ffffff" stroke="#dbe6f4" stroke-width="2"></path>
+      <line x1="0" y1="320" x2="0" y2="500" stroke="#e1eaf6" stroke-width="2"></line>
+      <path d="M-10 330 l10 24 l10 -24 z" fill="#0a9aa3"></path>
+      <circle cx="0" cy="300" r="40" fill="#f0d6c0"></circle>
+      <path d="M-40 300 a40 40 0 0 1 80 0 q-40 -30 -80 0 z" fill="#5a4a3a"></path>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Steril üretim / temiz oda">
+  <defs>
+    <linearGradient id="cr-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0c2f59"></stop>
+      <stop offset="1" stop-color="#061d3a"></stop>
+    </linearGradient>
+    <linearGradient id="cr-floor" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0a2747"></stop>
+      <stop offset="1" stop-color="#081f3c"></stop>
+    </linearGradient>
+    <linearGradient id="cr-light" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#bfe0ff" stop-opacity=".55"></stop>
+      <stop offset="1" stop-color="#bfe0ff" stop-opacity="0"></stop>
+    </linearGradient>
+    <linearGradient id="cr-suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#eef5ff"></stop>
+      <stop offset="1" stop-color="#cfe0f5"></stop>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="600" fill="url(#cr-bg)"></rect>
+  <rect x="0" y="430" width="800" height="170" fill="url(#cr-floor)"></rect>
+  <line x1="0" y1="430" x2="800" y2="430" stroke="#16graphic" stroke-opacity="0"></line>
+  <line x1="0" y1="430" x2="800" y2="430" stroke="#1e4f86" stroke-width="2"></line>
+
+  
+  <g>
+    <rect x="120" y="58" width="170" height="22" rx="6" fill="#173b66"></rect>
+    <rect x="132" y="63" width="146" height="12" rx="4" fill="#cfe6ff" opacity=".85"></rect>
+    <polygon points="135,80 275,80 330,430 80,430" fill="url(#cr-light)"></polygon>
+    <rect x="510" y="58" width="170" height="22" rx="6" fill="#173b66"></rect>
+    <rect x="522" y="63" width="146" height="12" rx="4" fill="#cfe6ff" opacity=".85"></rect>
+    <polygon points="525,80 665,80 720,430 470,430" fill="url(#cr-light)"></polygon>
+  </g>
+
+  
+  <g opacity=".5">
+    <rect x="60" y="150" width="120" height="150" rx="6" fill="none" stroke="#1e4f86" stroke-width="2"></rect>
+    <rect x="60" y="150" width="120" height="150" rx="6" fill="#0f3463" opacity=".5"></rect>
+    <rect x="620" y="150" width="120" height="150" rx="6" fill="none" stroke="#1e4f86" stroke-width="2"></rect>
+    <rect x="620" y="150" width="120" height="150" rx="6" fill="#0f3463" opacity=".5"></rect>
+  </g>
+
+  
+  <g>
+    <rect x="300" y="250" width="200" height="120" rx="10" fill="#0f3a6c" stroke="#2e6fb0" stroke-width="2"></rect>
+    <rect x="316" y="266" width="168" height="64" rx="6" fill="#bfe0ff" opacity=".18"></rect>
+    <line x1="400" y1="266" x2="400" y2="330" stroke="#2e6fb0" stroke-width="1.5" opacity=".7"></line>
+    <circle cx="345" cy="352" r="5" fill="#37c0c9"></circle>
+    <circle cx="365" cy="352" r="5" fill="#2e7be0"></circle>
+    <rect x="300" y="370" width="200" height="14" rx="3" fill="#0a2747"></rect>
+    <rect x="320" y="384" width="12" height="46" fill="#0a2747"></rect>
+    <rect x="468" y="384" width="12" height="46" fill="#0a2747"></rect>
+  </g>
+
+  
+  <g>
+    <ellipse cx="232" cy="430" rx="64" ry="12" fill="#040f1f" opacity=".5"></ellipse>
+    <path d="M196 300 q36 -30 72 0 l8 130 h-88 z" fill="url(#cr-suit)"></path>
+    <circle cx="232" cy="276" r="30" fill="url(#cr-suit)"></circle>
+    <path d="M206 272 a26 26 0 0 1 52 0 z" fill="#dfecfb"></path>
+    <rect x="214" y="276" width="36" height="18" rx="9" fill="#9fbfe6"></rect>
+    <path d="M200 318 l-22 56" stroke="#cfe0f5" stroke-width="14" stroke-linecap="round" fill="none"></path>
+    <path d="M264 318 l20 40" stroke="#cfe0f5" stroke-width="14" stroke-linecap="round" fill="none"></path>
+  </g>
+
+  
+  <g>
+    <ellipse cx="560" cy="430" rx="64" ry="12" fill="#040f1f" opacity=".5"></ellipse>
+    <path d="M524 300 q36 -30 72 0 l8 130 h-88 z" fill="url(#cr-suit)"></path>
+    <circle cx="560" cy="276" r="30" fill="url(#cr-suit)"></circle>
+    <path d="M534 272 a26 26 0 0 1 52 0 z" fill="#dfecfb"></path>
+    <rect x="542" y="276" width="36" height="18" rx="9" fill="#9fbfe6"></rect>
+    <path d="M536 318 l-26 44" stroke="#cfe0f5" stroke-width="14" stroke-linecap="round" fill="none"></path>
+    <path d="M592 318 l24 50" stroke="#cfe0f5" stroke-width="14" stroke-linecap="round" fill="none"></path>
+  </g>
+
+  
+  <g opacity=".9">
+    <rect x="612" y="360" width="120" height="58" rx="10" fill="#0f3a6c" stroke="#2e6fb0" stroke-width="1.5"></rect>
+    <circle cx="636" cy="389" r="11" fill="none" stroke="#37c0c9" stroke-width="3"></circle>
+    <path d="M631 389 l4 5 7 -9" stroke="#37c0c9" stroke-width="3" fill="none" stroke-linecap="round"></path>
+    <rect x="656" y="377" width="60" height="7" rx="3.5" fill="#bfe0ff" opacity=".8"></rect>
+    <rect x="656" y="392" width="44" height="7" rx="3.5" fill="#7fa8d8" opacity=".7"></rect>
+  </g>
+</svg>

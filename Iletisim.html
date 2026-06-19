@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>İletişim | Balton Medikal</title>
+<meta name="description" content="Balton ile iletişime geçin. Ürün ve katalog talepleriniz, iş birliği ve genel sorularınız için iletişim formu ve kurumsal iletişim bilgileri.">
+<meta name="theme-color" content="#0a2c54">
+<link rel="stylesheet" href="assets/css/balton.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<div data-chrome="header"></div>
+
+<main>
+  <!-- ============ PAGE HERO ============ -->
+  <section class="hero hero-page">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Sayfa konumu">
+        <a href="Anasayfa.html">Anasayfa</a><i data-lucide="chevron-right"></i><span class="current">İletişim</span>
+      </nav>
+      <span class="eyebrow on-dark">İletişim</span>
+      <h1 class="mt-s">Bize ulaşın</h1>
+      <p class="lead">Ürün ve katalog talepleriniz, iş birliği önerileriniz veya genel sorularınız için aşağıdaki formu doldurabilir ya da kurumsal iletişim kanallarımızı kullanabilirsiniz.</p>
+    </div>
+  </section>
+
+  <!-- ============ FORM + INFO ============ -->
+  <section>
+    <div class="wrap">
+      <div class="split" style="align-items:start">
+
+        <!-- Form -->
+        <div class="card reveal" style="padding:clamp(24px,3vw,38px)">
+          <h2 style="font-size:clamp(1.4rem,1.2rem+.8vw,1.8rem)">İletişim Formu</h2>
+          <p class="muted mt-s">Tüm <span style="color:var(--blue)">*</span> işaretli alanlar zorunludur.</p>
+
+          <div class="form-ok" id="formOk" role="status">
+            <i data-lucide="check-circle-2"></i>
+            <span>Teşekkürler! Mesajınız alındı, en kısa sürede sizinle iletişime geçeceğiz.</span>
+          </div>
+
+          <form id="contactForm" class="mt-m" novalidate>
+            <div class="form-grid">
+              <div class="field">
+                <label for="ad">Ad Soyad <span class="req">*</span></label>
+                <input type="text" id="ad" name="ad" autocomplete="name" required>
+                <span class="err-msg">Lütfen ad ve soyadınızı girin.</span>
+              </div>
+              <div class="field">
+                <label for="firma">Firma / Kurum</label>
+                <input type="text" id="firma" name="firma" autocomplete="organization">
+                <span class="err-msg"></span>
+              </div>
+              <div class="field">
+                <label for="email">E-posta <span class="req">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+                <span class="err-msg">Geçerli bir e-posta adresi girin.</span>
+              </div>
+              <div class="field">
+                <label for="tel">Telefon</label>
+                <input type="tel" id="tel" name="tel" autocomplete="tel">
+                <span class="err-msg"></span>
+              </div>
+              <div class="field full">
+                <label for="konu">Konu <span class="req">*</span></label>
+                <select id="konu" name="konu" required>
+                  <option value="">Seçiniz…</option>
+                  <option>Ürün ve katalog talebi</option>
+                  <option>İş birliği / distribütörlük</option>
+                  <option>Teknik bilgi</option>
+                  <option>Diğer</option>
+                </select>
+                <span class="err-msg">Lütfen bir konu seçin.</span>
+              </div>
+              <div class="field full">
+                <label for="mesaj">Mesaj <span class="req">*</span></label>
+                <textarea id="mesaj" name="mesaj" required></textarea>
+                <span class="err-msg">Lütfen mesajınızı yazın.</span>
+              </div>
+              <div class="field full">
+                <label class="consent">
+                  <input type="checkbox" id="kvkk" name="kvkk" required>
+                  <span>Kişisel verilerimin iletişim talebimin yanıtlanması amacıyla işlenmesini kabul ediyorum. <span class="req">*</span></span>
+                </label>
+                <span class="err-msg">Devam etmek için onay vermeniz gerekir.</span>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary mt-m" style="width:100%"><i data-lucide="send"></i> Gönder</button>
+            <p class="form-note"><i data-lucide="lock"></i> Bilgileriniz yalnızca talebinizin yanıtlanması için kullanılır.</p>
+          </form>
+        </div>
+
+        <!-- Info + map -->
+        <div class="reveal d2">
+          <span class="eyebrow">İletişim Bilgileri</span>
+          <h2 class="mt-s" style="font-size:clamp(1.4rem,1.2rem+.8vw,1.8rem)">Kurumsal iletişim</h2>
+          <div class="info-list mt-m" id="infoList"></div>
+
+          <h3 class="mt-l" style="font-size:1.1rem">Konum</h3>
+          <div class="map-ph mt-s">
+            <iframe
+              title="Balton Medikal konumu"
+              src="https://www.google.com/maps?q=%C3%87ankaya%20Mahallesi%20Farabi%20Sokak%20No%3A%2024%2F14%20%C3%87ankaya%20Ankara&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<div data-chrome="footer"></div>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="assets/js/data.js"></script>
+<script>
+/* Contact info cards from shared data */
+(function () {
+  var B = window.BALTON, el = document.getElementById('infoList');
+  if (!B || !el) return;
+  var c = B.company;
+  function item(icon, title, body) {
+    return '<div class="info-item"><span class="i-ico"><i data-lucide="' + icon + '"></i></span>' +
+      '<div><h4>' + title + '</h4>' + body + '</div></div>';
+  }
+  el.innerHTML =
+    item('map-pin', 'Adres', '<p>' + c.address.replace(/\n/g, '<br>') + '</p>') +
+    item('phone', 'Telefon', '<a href="tel:' + c.phoneHref + '">' + c.phone + '</a>') +
+    item('mail', 'E-posta', '<a href="mailto:' + c.email + '">' + c.email + '</a>') +
+    item('clock', 'Çalışma Saatleri', '<p>' + c.hours + '</p>');
+})();
+
+/* Form validation + mock submit */
+(function () {
+  var form = document.getElementById('contactForm');
+  if (!form) return;
+  var ok = document.getElementById('formOk');
+
+  function fieldOf(input) { return input.closest('.field'); }
+  function validate(input) {
+    var valid = true;
+    if (input.type === 'checkbox') valid = input.checked;
+    else if (input.hasAttribute('required')) valid = input.value.trim() !== '';
+    if (valid && input.type === 'email' && input.value) valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(input.value);
+    fieldOf(input).classList.toggle('invalid', !valid);
+    return valid;
+  }
+
+  form.querySelectorAll('[required]').forEach(function (inp) {
+    inp.addEventListener('blur', function () { validate(inp); });
+    inp.addEventListener('input', function () { if (fieldOf(inp).classList.contains('invalid')) validate(inp); });
+    inp.addEventListener('change', function () { validate(inp); });
+  });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var allValid = true, firstBad = null;
+    form.querySelectorAll('[required]').forEach(function (inp) {
+      if (!validate(inp)) { allValid = false; if (!firstBad) firstBad = inp; }
+    });
+    if (!allValid) { if (firstBad) firstBad.focus(); return; }
+    // Mock submission (no backend wired up)
+    form.reset();
+    form.querySelectorAll('.invalid').forEach(function (f) { f.classList.remove('invalid'); });
+    if (ok) { ok.classList.add('show'); }
+  });
+})();
+</script>
+<script src="assets/js/chrome.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

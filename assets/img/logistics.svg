@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Türkiye ofisi ve lojistik ağı">
+  <defs>
+    <linearGradient id="log-bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f4f9ff"></stop>
+      <stop offset="1" stop-color="#e7f0fc"></stop>
+    </linearGradient>
+    <linearGradient id="tr-fill" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1763c9"></stop>
+      <stop offset="1" stop-color="#0a2c54"></stop>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#log-bg)"></rect>
+
+  
+  <g fill="#1763c9" opacity=".06">
+    <circle cx="120" cy="110" r="4"></circle><circle cx="180" cy="150" r="4"></circle><circle cx="660" cy="120" r="4"></circle><circle cx="700" cy="180" r="4"></circle><circle cx="100" cy="480" r="4"></circle><circle cx="690" cy="470" r="4"></circle>
+  </g>
+
+  
+  <path d="M150 300&#xA;           q40 -34 110 -28 q60 -28 130 -10 q70 -22 140 4 q60 -8 120 22&#xA;           q24 12 14 36 q-30 26 -84 18 q-50 24 -120 8 q-60 22 -140 4&#xA;           q-70 24 -150 -2 q-50 -10 -78 -34 q-12 -22 18 -18 z" fill="url(#tr-fill)"></path>
+  <path d="M150 300&#xA;           q40 -34 110 -28 q60 -28 130 -10 q70 -22 140 4 q60 -8 120 22&#xA;           q24 12 14 36 q-30 26 -84 18 q-50 24 -120 8 q-60 22 -140 4&#xA;           q-70 24 -150 -2 q-50 -10 -78 -34 q-12 -22 18 -18 z" fill="none" stroke="#2e7be0" stroke-opacity=".4" stroke-width="2"></path>
+
+  
+  <g fill="none" stroke="#37c0c9" stroke-width="2.5" stroke-dasharray="2 9" stroke-linecap="round">
+    <path d="M420 270 C320 230 250 250 200 280"></path>
+    <path d="M420 270 C520 230 600 240 650 282"></path>
+    <path d="M420 270 C400 200 360 150 300 140"></path>
+    <path d="M420 270 C470 350 520 400 560 430"></path>
+  </g>
+
+  
+  <g>
+    <g fill="#bfe0ff"><circle cx="200" cy="280" r="6"></circle><circle cx="650" cy="282" r="6"></circle><circle cx="300" cy="140" r="6"></circle><circle cx="560" cy="430" r="6"></circle></g>
+  </g>
+  
+  <g transform="translate(300 134)">
+    <path d="M0 -34 a22 22 0 0 1 22 22 c0 16 -22 38 -22 38 c0 0 -22 -22 -22 -38 a22 22 0 0 1 22 -22 z" fill="#1763c9"></path>
+    <circle cx="0" cy="-12" r="9" fill="#ffffff"></circle>
+  </g>
+
+  
+  <g transform="translate(420 270)">
+    <circle r="24" fill="#2e7be0" fill-opacity=".22"></circle>
+    <circle r="10" fill="#1763c9"></circle>
+    <circle r="4" fill="#ffffff"></circle>
+  </g>
+
+  
+  <g transform="translate(470 470)">
+    <ellipse cx="60" cy="74" rx="92" ry="12" fill="#0a2c54" opacity=".08"></ellipse>
+    <rect x="-6" y="0" width="86" height="56" rx="6" fill="#ffffff" stroke="#d3dded" stroke-width="2.5"></rect>
+    <rect x="6" y="12" width="62" height="20" rx="3" fill="#e7f0fc"></rect>
+    <path d="M80 18 h34 l24 22 v16 h-58 z" fill="#1763c9"></path>
+    <rect x="88" y="22" width="22" height="18" rx="3" fill="#bfe0ff"></rect>
+    <circle cx="22" cy="62" r="14" fill="#0a2c54"></circle><circle cx="22" cy="62" r="6" fill="#c9d7e8"></circle>
+    <circle cx="112" cy="62" r="14" fill="#0a2c54"></circle><circle cx="112" cy="62" r="6" fill="#c9d7e8"></circle>
+  </g>
+</svg>

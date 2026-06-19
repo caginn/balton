@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Uluslararası iş birliği ağı">
+  <defs>
+    <radialGradient id="map-bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0" stop-color="#0d3a6e"></stop>
+      <stop offset="1" stop-color="#061d3a"></stop>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#map-bg)"></rect>
+
+  
+  <g stroke="#2e6fb0" stroke-opacity=".18" stroke-width="1">
+    <ellipse cx="400" cy="300" rx="360" ry="360" fill="none"></ellipse>
+    <ellipse cx="400" cy="300" rx="360" ry="120" fill="none"></ellipse>
+    <ellipse cx="400" cy="300" rx="360" ry="230" fill="none"></ellipse>
+    <ellipse cx="400" cy="300" rx="120" ry="360" fill="none"></ellipse>
+    <ellipse cx="400" cy="300" rx="240" ry="360" fill="none"></ellipse>
+    <line x1="40" y1="300" x2="760" y2="300"></line>
+    <line x1="400" y1="-60" x2="400" y2="660"></line>
+  </g>
+
+  
+  <g fill="#3b7bc4" fill-opacity=".55">
+    
+    <path d="M150 170 q40 -20 60 10 q-6 40 -30 60 q10 50 -20 90 q-30 -10 -34 -60 q-20 -50 24 -100 z"></path>
+    
+    <path d="M380 150 q60 -16 80 20 q-10 50 -40 60 q20 60 -10 120 q-50 10 -56 -60 q-30 -60 26 -160 z"></path>
+    
+    <path d="M520 160 q90 -10 130 30 q-20 50 -70 56 q40 40 0 80 q-70 -6 -90 -70 q-30 -50 30 -96 z"></path>
+  </g>
+
+  
+  <g fill="none" stroke="#37c0c9" stroke-width="2" stroke-opacity=".85">
+    <path d="M452 222 C360 120 250 150 196 220"></path>
+    <path d="M452 222 C420 140 340 150 300 250"></path>
+    <path d="M452 222 C560 150 620 180 632 250"></path>
+    <path d="M452 222 C540 280 600 330 600 380"></path>
+    <path d="M452 222 C360 300 300 350 250 360"></path>
+  </g>
+
+  
+  <g>
+    <g fill="#bfe0ff"><circle cx="196" cy="220" r="6"></circle><circle cx="300" cy="250" r="6"></circle><circle cx="632" cy="250" r="6"></circle><circle cx="600" cy="380" r="6"></circle><circle cx="250" cy="360" r="6"></circle></g>
+    <g fill="#37c0c9" fill-opacity=".25"><circle cx="196" cy="220" r="13"></circle><circle cx="300" cy="250" r="13"></circle><circle cx="632" cy="250" r="13"></circle><circle cx="600" cy="380" r="13"></circle><circle cx="250" cy="360" r="13"></circle></g>
+  </g>
+
+  
+  <g>
+    <circle cx="452" cy="222" r="26" fill="#1763c9" fill-opacity=".25"></circle>
+    <circle cx="452" cy="222" r="11" fill="#2e7be0"></circle>
+    <circle cx="452" cy="222" r="5" fill="#ffffff"></circle>
+  </g>
+
+  
+  <g>
+    <rect x="300" y="500" width="200" height="46" rx="23" fill="#0f3a6c" stroke="#2e6fb0" stroke-width="1.5"></rect>
+    <circle cx="330" cy="523" r="7" fill="#37c0c9"></circle>
+    <rect x="348" y="514" width="130" height="8" rx="4" fill="#bfe0ff" opacity=".85"></rect>
+    <rect x="348" y="528" width="96" height="7" rx="3.5" fill="#7fa8d8" opacity=".7"></rect>
+  </g>
+</svg>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ürünlerimiz | Balton Medikal</title>
+<meta name="description" content="Balton ürün grupları: Anestezi, Kardiyoloji ve Radyoloji, Diyaliz, Kadın Doğum, Cerrahi ve Gastroenteroloji, Üroloji. Tek kullanımlık tıbbi malzeme ve stentler.">
+<meta name="theme-color" content="#0a2c54">
+<link rel="stylesheet" href="assets/css/balton.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<div data-chrome="header"></div>
+
+<main>
+  <!-- ============ PAGE HERO ============ -->
+  <section class="hero hero-page">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Sayfa konumu">
+        <a href="Anasayfa.html">Anasayfa</a><i data-lucide="chevron-right"></i><span class="current">Ürünlerimiz</span>
+      </nav>
+      <span class="eyebrow on-dark">Ürün Grupları</span>
+      <h1 class="mt-s">Ürünlerimiz</h1>
+      <p class="lead">Sekiz klinik alanda, ilgili branşın ihtiyaçlarına göre geliştirilmiş tek kullanımlık tıbbi malzeme ve stent portföyü. Her kategoriyi inceleyerek ürün listesini ve katalog görüntüleyiciyi görebilirsiniz.</p>
+    </div>
+  </section>
+
+  <!-- ============ CATEGORY GRID ============ -->
+  <section>
+    <div class="wrap">
+      <div class="grid cols-3" id="catGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="section-mist">
+    <div class="wrap">
+      <div class="cta-band reveal">
+        <div class="inner">
+          <div>
+            <h2>Aradığınız ürünü bulamadınız mı?</h2>
+            <p>Klinik ihtiyaçlarınıza uygun ürün ve katalog bilgileri için uzman ekibimizle iletişime geçin.</p>
+          </div>
+          <div class="cta-row">
+            <a class="btn btn-light" href="Iletisim.html"><i data-lucide="send"></i> İletişime Geçin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div data-chrome="footer"></div>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="assets/js/data.js"></script>
+<script>
+/* Build full category cards from shared data */
+(function () {
+  var B = window.BALTON, grid = document.getElementById('catGrid');
+  if (!B || !grid) return;
+  grid.innerHTML = B.categoryOrder.map(function (slug, i) {
+    var c = B.categories[slug];
+    var d = (i % 3) + 1;
+    return '<a class="card cat-card reveal d' + d + '" href="Urun-Kategori.html?kategori=' + slug + '">' +
+      '<span class="cat-ico"><i data-lucide="' + c.icon + '"></i></span>' +
+      '<span class="cat-name">' + c.name + '</span>' +
+      '<h3>' + c.tr + '</h3>' +
+      '<p>' + c.short + '</p>' +
+      '<span class="link-arrow">Ürünleri Gör <i data-lucide="arrow-right"></i></span>' +
+    '</a>';
+  }).join('');
+})();
+</script>
+<script src="assets/js/chrome.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>

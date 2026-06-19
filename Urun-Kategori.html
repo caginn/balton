@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ürün Kategorisi | Balton Medikal</title>
+<meta name="description" content="Balton ürün kategorisi detayı: ürün listesi ve katalog görüntüleyici.">
+<meta name="theme-color" content="#0a2c54">
+<link rel="stylesheet" href="assets/css/balton.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<div data-chrome="header"></div>
+
+<main>
+  <!-- ============ CATEGORY HERO ============ -->
+  <section class="hero hero-page">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Sayfa konumu">
+        <a href="Anasayfa.html">Anasayfa</a><i data-lucide="chevron-right"></i>
+        <a href="Urunlerimiz.html">Ürünlerimiz</a><i data-lucide="chevron-right"></i>
+        <span class="current" data-cat="crumb">Kategori</span>
+      </nav>
+      <span class="eyebrow on-dark" data-cat="eyebrow">CATEGORY</span>
+      <h1 class="mt-s" data-cat="title">Kategori</h1>
+      <p class="lead" data-cat="intro">…</p>
+    </div>
+  </section>
+
+  <!-- ============ DETAIL ============ -->
+  <section>
+    <div class="wrap">
+      <div class="cat-detail-grid">
+
+        <!-- Product list panel -->
+        <aside class="prod-panel reveal">
+          <span class="eyebrow">Ürün Listesi</span>
+          <h2 class="mt-s" style="font-size:clamp(1.4rem,1.2rem+.8vw,1.8rem)">Bu kategorideki ürünler</h2>
+          <p class="muted mt-s" data-cat="count" style="font-size:.92rem">…</p>
+          <ul class="prod-list" data-cat="products"></ul>
+          <a class="btn btn-ghost btn-sm mt-m" href="Urunlerimiz.html"><i data-lucide="arrow-left"></i> Tüm Kategoriler</a>
+        </aside>
+
+        <!-- Mock PDF catalog viewer -->
+        <div class="reveal d2">
+          <span class="eyebrow">Katalog</span>
+          <h2 class="mt-s" style="font-size:clamp(1.4rem,1.2rem+.8vw,1.8rem)">Ürün kataloğunu görüntüleyin</h2>
+          <p class="muted mt-s">Kataloğu aşağıdaki görüntüleyiciden inceleyebilir veya tam ekran açabilirsiniz.</p>
+
+          <div class="pdfv mt-m">
+            <div class="pdfv-bar">
+              <div class="pv-title">
+                <i data-lucide="book-open-text"></i>
+                <span data-cat="pdfname">Katalog</span>
+              </div>
+              <a class="pdfv-open" data-cat="open" href="#" target="_blank" rel="noopener"><i data-lucide="maximize-2"></i> Tam ekran görüntüle</a>
+            </div>
+            <div class="pdfv-frame" data-cat="frame" aria-label="Katalog görüntüleyici"></div>
+          </div>
+
+          <!-- Download is intentionally NOT offered; see assets/js/catalog.js for the security rationale. -->
+          <div class="pdf-note">
+            <i data-lucide="info"></i>
+            <span>Katalog yalnızca görüntüleme amaçlıdır. İndirme bağlantısı sunulmamaktadır; ürün ve fiyat talepleriniz için lütfen <a href="Iletisim.html" style="color:var(--blue);font-weight:700">iletişim formunu</a> kullanın.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OTHER CATEGORIES ============ -->
+  <section class="section-mist">
+    <div class="wrap">
+      <div class="section-head center">
+        <span class="eyebrow">Diğer Gruplar</span>
+        <h2 class="mt-s">Diğer ürün kategorileri</h2>
+      </div>
+      <div class="grid cols-3" id="otherCats"></div>
+    </div>
+  </section>
+</main>
+
+<div data-chrome="footer"></div>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/catalog.js"></script>
+<script>
+/* Other categories (exclude current) */
+(function () {
+  var B = window.BALTON, grid = document.getElementById('otherCats');
+  if (!B || !grid) return;
+  var slug = new URLSearchParams(location.search).get('kategori');
+  if (!B.categories[slug]) slug = B.categoryOrder[0];
+  var others = B.categoryOrder.filter(function (s) { return s !== slug; }).slice(0, 3);
+  grid.innerHTML = others.map(function (s, i) {
+    var c = B.categories[s];
+    return '<a class="card cat-card reveal d' + (i + 1) + '" href="Urun-Kategori.html?kategori=' + s + '">' +
+      '<span class="cat-ico"><i data-lucide="' + c.icon + '"></i></span>' +
+      '<span class="cat-name">' + c.name + '</span>' +
+      '<h3>' + c.tr + '</h3>' +
+      '<p>' + c.short + '</p>' +
+      '<span class="link-arrow">Ürünleri Gör <i data-lucide="arrow-right"></i></span>' +
+    '</a>';
+  }).join('');
+})();
+</script>
+<script src="assets/js/chrome.js"></script>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
