@@ -156,7 +156,7 @@ window.BALTON = {
       short: 'Alt ekstremite varislerinin tedavisine yönelik Flebogrif® sistemi.',
       intro: 'Fleboloji alanında, yüzeyel venlerin mekanik ve kimyasal obliterasyonu için geliştirilen Flebogrif® varis tedavi sistemini sunuyoruz. Termal işlem gerektirmeyen, ayaktan uygulanabilen ve hızlı iyileşme sağlayan bir çözümdür.',
       products: [
-        'Flebogrif® Varis Tedavi Seti',
+        'Flebogrif® Venous Tedavi Seti',
         'Mekanik–Kimyasal Obliterasyon Sistemi',
         'Yüzeyel Ven Tedavi Aksesuarları',
       ],
