@@ -154,7 +154,7 @@ window.BALTON = {
       tr: 'Fleboloji',
       icon: 'spline',
       short: 'Alt ekstremite venöz tedavisine yönelik Flebogrif® sistemi.',
-      intro: 'Fleboloji alanında, yüzeyel venlerin mekanik ve kimyasal obliterasyonu için geliştirilen Flebogrif® varis tedavi sistemini sunuyoruz. Termal işlem gerektirmeyen, ayaktan uygulanabilen ve hızlı iyileşme sağlayan bir çözümdür.',
+      intro: 'Fleboloji alanında, yüzeyel venözlerin mekanik ve kimyasal obliterasyonu için geliştirilen Flebogrif® venöz tedavi sistemini sunuyoruz. Termal işlem gerektirmeyen, ayaktan uygulanabilen ve hızlı iyileşme sağlayan bir çözümdür.',
       products: [
         'Flebogrif® Venöz Tedavi Seti',
         'Mekanik–Kimyasal Obliterasyon Sistemi',
